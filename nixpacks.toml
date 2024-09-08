@@ -3,10 +3,10 @@ dependsOn = ["setup"]
 cmds = ["poetry install"]
 
 [start]
-cmd = "poetry run app"
+cmd = "poetry install --only-root && poetry run prod"
 
-[deplay]
-startCommand = "poetry install --only-root && poetry run prod"
+# [deploy]
+# startCommand = "poetry install --only-root && poetry run prod"
 
 
 [variables]
