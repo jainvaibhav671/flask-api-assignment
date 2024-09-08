@@ -1,5 +1,5 @@
-[phases]
-start = "poetry run app"
+[start]
+cmd = "poetry run app"
 
 [variables]
 PYTHONUNBUFFERED = "1"  # Ensures Python output is sent straight to the terminal without buffering
