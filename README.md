@@ -1,20 +1,3 @@
-<style>
-
-.route-name {
-  color: #00ffff;
-}
-
-.request-type, .status-200 {
-  color: #44ff44;
-}
-
-.status-error {
-  color: #ff4444;
-}
-
-</style>
-
-
 # Introduction
 
 This is a basic Flask API with the following:
