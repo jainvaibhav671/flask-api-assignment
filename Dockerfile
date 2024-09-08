@@ -12,4 +12,4 @@ COPY . ./
 # Install the root project
 RUN poetry install --only-root
 
-CMD ["poetry", "run", "app"]
+CMD ["poetry", "run", "prod"]
