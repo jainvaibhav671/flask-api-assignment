@@ -2,6 +2,8 @@ from flask import Flask
 from flask_cors import CORS
 from .v1.app import v1
 
+import os
+
 app = Flask(__name__)
 
 CORS(app)
@@ -17,7 +19,7 @@ def dev():
 
 def prod():
     from waitress import serve
-    serve(app, host='0.0.0.0', port=5000)
+    serve(app, host='0.0.0.0', port=os.environ.get("PORT", 5000))
 
 if __name__ == "__main__":
     prod()

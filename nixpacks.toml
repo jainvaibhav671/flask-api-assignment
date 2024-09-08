@@ -1,0 +1,14 @@
+[build.nixpacksPlan.phases.install]
+dependsOn = ["setup"]
+cmds = ["poetry install"]
+
+[start]
+cmd = "poetry run app"
+
+[deplay]
+startCommand = "poetry install --only-root && poetry run prod"
+
+
+[variables]
+PYTHONUNBUFFERED = "1"  # Ensures Python output is sent straight to the terminal without buffering
+FLASK_ENV = "production"  # Runs the Flask server in production mode
