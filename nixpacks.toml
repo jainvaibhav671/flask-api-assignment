@@ -1,3 +1,6 @@
+[install]
+cmd = "poetry install"
+
 [start]
 cmd = "poetry run app"
 
