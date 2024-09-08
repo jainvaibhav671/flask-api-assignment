@@ -1,0 +1,14 @@
+[phases]
+
+# Install pipx and use it to install Poetry
+setup = "python3 -m pip install --user pipx && python3 -m pipx ensurepath && pipx install poetry"
+
+# Install dependencies using Poetry
+install = "poetry install"
+
+# Run the application using the 'app' script from pyproject.toml
+start = "poetry run app"
+
+[variables]
+PYTHONUNBUFFERED = "1"  # Ensures Python output is sent straight to the terminal without buffering
+FLASK_ENV = "production"  # Runs the Flask server in production mode
