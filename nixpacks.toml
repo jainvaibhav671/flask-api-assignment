@@ -6,7 +6,7 @@ cmds = ["poetry install"]
 cmd = "poetry run app"
 
 [deplay]
-startCommand = "poetry run app"
+startCommand = "poetry install && poetry run app"
 
 
 [variables]
