@@ -1,8 +1,9 @@
-[install]
-cmd = "poetry install"
+[build.nixpacksPlan.phases.install]
+dependsOn = ["setup"]
+cmds = ["poetry install"]
 
-[start]
-cmd = "poetry run app"
+[deploy]
+startCommand = "echo starting"
 
 [variables]
 PYTHONUNBUFFERED = "1"  # Ensures Python output is sent straight to the terminal without buffering
