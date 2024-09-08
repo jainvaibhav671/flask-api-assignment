@@ -13,6 +13,7 @@ This is a basic Flask API with the following:
 - [Installation](#installation)
 - [Usage](#usage)
 - [Testing](#testing)
+- [API Routes](#api-routes)
 
 ---
 
