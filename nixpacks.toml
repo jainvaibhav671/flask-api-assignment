@@ -2,8 +2,12 @@
 dependsOn = ["setup"]
 cmds = ["poetry install"]
 
-[deploy]
-startCommand = "echo starting"
+[start]
+cmd = "poetry run app"
+
+[deplay]
+startCommand = "poetry run app"
+
 
 [variables]
 PYTHONUNBUFFERED = "1"  # Ensures Python output is sent straight to the terminal without buffering
