@@ -74,7 +74,7 @@ pipx install poetry
 To run the flask server, use
 
 ```bash
-poetry run app
+poetry run dev
 ```
 
 Here `app` is a script defined in the **pyproject.toml** which runs the flask server
