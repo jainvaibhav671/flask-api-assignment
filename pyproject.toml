@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "assignment"
+version = "0.1.0"
+description = ""
+authors = ["Vaibhav Jain <jainvaibhav671@gmail.com>"]
+readme = "README.md"
+packages = [{include = "assignment", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.0.3"
+flask-cors = "^5.0.0"
+pandas = "^2.2.2"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+app = 'assignment.app:main'
